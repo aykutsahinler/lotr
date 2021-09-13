@@ -1,0 +1,143 @@
+.useful-links-container {
+    padding: 150px;
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.useful-links-container:not(:nth-child(2)) {
+    padding: 0;
+}
+
+.link-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 40vh;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px -5px grey;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+    background-color: rgb(41, 41, 41);
+    text-align: center;
+}
+
+.link-card:hover {
+    transform: scale(1.1);
+}
+
+.link-card:hover a {
+    color: white;
+}
+
+.link-card::before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 100%;  
+    left: 0;
+    border-radius: 20px;
+    transition: all .4s;
+}
+
+.link-card:nth-child(1)::before {
+    background: url('../../assets/Links/torrent.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.link-card:nth-child(2)::before {
+    background: url('../../assets/Links/youtube.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(20%);
+}
+
+.link-card:nth-child(2):hover a {
+    color: black
+}
+
+.link-card:nth-child(3)::before {
+    background: url('../../assets/Links/wiki.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.link-card:nth-child(4)::before {
+    background: url('../../assets/Links/imdb.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.link-card:nth-child(5)::before {
+    background: url('../../assets/Links/instagram.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.link-card:nth-child(6)::before {
+    background: url('../../assets/Links/geekgerek.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top;
+}
+
+.link-card:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.link-card h2 {
+    padding-bottom: 20px;
+    z-index: 10;
+    color: tomato;
+}
+
+.link-card a {
+    text-decoration: none;
+    color: white;
+    z-index: 10;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.link-card a:hover {
+    color: tomato;
+}
+
+.link-card a p {
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 940px) {
+    p {
+        font-size: 16px;
+    }
+
+    .link-card {
+        width: 90vw; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 20px
+    }
+
+    .useful-links-container {
+        padding: 50px;
+    }
+}

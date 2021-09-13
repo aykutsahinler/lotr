@@ -1,0 +1,24 @@
+.footer {
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    color: white;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+.footer a {
+    color: tomato;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        padding: 20px;
+        font-size: 14px;
+    }
+}

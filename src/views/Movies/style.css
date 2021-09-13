@@ -1,0 +1,87 @@
+.movie-contaier {
+    padding-top: 140px;
+    background-color: #e8e8e8;
+}
+
+.movie-container h1, h2 {
+    color: tomato;
+    text-align: center;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+.series-container ul li {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.movie-container ul li p {
+    padding-bottom: 5px;
+}
+
+.poster {
+    height: 700px;
+    width: 500px;
+    background-size: cover;
+    margin-left: 100px; 
+    border-radius: 20px;
+}
+
+li:nth-child(1) .poster,
+li:nth-child(2) .poster {
+    height: 420px;
+    width: 750px;
+}
+
+li:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+li:nth-child(2n) .poster{
+    margin-left: 0;
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 1200px){
+    li {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    li .poster {
+        width: 400px;
+        height: 600px;
+        margin: 50px;
+    }
+
+    li:nth-child(1) .poster,
+    li:nth-child(2) .poster {
+        height: 420px;
+        width: 750px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    li:nth-child(1) .poster,
+    li:nth-child(2) .poster {
+        display: none;
+    }
+
+    .poster {
+        height: 520px;
+        width: 80%;
+    }
+
+    li:nth-child(2n) .poster{
+        margin: 0;
+        height: 520px;
+        width: 80%;
+    }
+}

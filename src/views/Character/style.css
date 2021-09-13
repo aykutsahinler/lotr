@@ -1,0 +1,40 @@
+.specific-character-container {
+    position: relative;
+    background-color: #fff;
+    height: 60vh;
+    width: 50vw;
+    min-height: 250px;
+    min-width: 250px;
+    position: fixed;
+    z-index: 50;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    box-shadow: 0rem 1rem 1rem -1rem black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.cross {
+    position: absolute;
+    top: 1.2rem;
+    left: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.close {
+    display: none;
+}
+
+.character-infos li{
+    font-weight: 400;
+}
+
+.character-infos li span {
+    margin-left: 10px;
+}

@@ -1,0 +1,125 @@
+.character-header h1 {
+    padding-bottom: 50px;
+    color: tomato;
+}
+
+.character-header input {
+    width: 70%;
+    padding: 8px 20px 8px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none
+}
+
+.character-container a {
+    color: black;
+    text-decoration: none;
+}
+
+.character-container a:hover {
+    color: red
+}
+
+.character-container {
+    background-color: #e8e8e8;
+    padding-top: 100px;
+    position: relative;
+    min-height: 100vh;
+}   
+
+.character-header {
+    width: 100vw;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.character-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: decimal-leading-zero;
+    padding: 100px;
+    margin-left: 65px;
+}
+
+.list-item {
+    padding: 0 50px 50px 0;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.top-btn {
+    position: fixed;
+    top: calc(100vh - 100px);
+    right: 50px;
+    background-color: tomato;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 10px -2px grey;
+    border-radius: 10px;
+    transition: .1s;
+    padding: 5px;
+}
+
+.top-btn:focus {
+    outline: none;
+}
+
+.top-btn:hover {
+    transform: scale(1.1)
+}
+
+.filter-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+.button-list button {
+    padding: .5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: tomato;
+    border-radius: .3rem;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.button-list button:active, .button-list button:focus {
+    background-color: red;
+} 
+
+@media screen and (max-width: 800px){
+    .character-list {
+        padding: 20px;
+        margin: 0;
+    }
+    
+    .list-item {
+        padding: 10px;
+        font-size: 16px;
+        list-style: none;
+    }
+
+    .top-btn {        
+        position: fixed;
+        right: 10px;
+        margin-top: 50px;
+        height: 30px;
+        padding: 2px;
+    }
+}

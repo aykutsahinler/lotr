@@ -1,0 +1,57 @@
+.slider-container {
+    padding-top: 100px;
+}
+
+.slider-container span {
+    width: 100vw;
+    height: calc(100vh - 100px);  
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-1 {
+    background: url('../../../assets/Slider/balrog.jpg');   
+    background-position: top;   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-2 {
+    background: url('../../../assets/Slider/nazgul2.jpg');
+    background-position: center;   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-3 {
+    background: url('../../../assets/Slider/nazgul.jpg');   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-4 {
+    background: url('../../../assets/Slider/ring2.jpg');   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-5 {
+    background: url('../../../assets/Slider/sauron.jpg');   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-6 {
+    background: url('../../../assets/Slider/rivendell2.jpg');   
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 600px) {
+    .slider-container span {
+        height: calc(100vh - 100px);
+        width: 100vw;
+    }
+}

@@ -1,0 +1,147 @@
+.tolkien-card img {
+  height: 600px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.tolkien-card img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 15px -5px black;
+}
+
+.tolkien h1,
+h2 {
+  color: tomato;
+  text-align: center;
+  padding: 0px 0 50px 0;
+}
+
+.tolkien {
+  margin-top: 150px;
+  padding: 0 50px 0 50px;
+}
+
+.tolkien-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tolkien-card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+}
+
+.tolkien-card p {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s;
+  width: 500px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.tolkien-card p span {
+  z-index: 50;
+  font-size: 19px;
+}
+
+.tolkien-card p span::selection {
+  color: lightgrey;
+}
+
+.tolkien-card p:hover span {
+  color: tomato;
+}
+
+.tolkien-card p::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 0 0 10px 0;
+  transition: all 0.4s;
+  background: black;
+}
+
+.tolkien-card p:hover::before {
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.tolkien-card ul li {
+  list-style-type: circle;
+  padding-bottom: 2px;
+}
+
+@media screen and (max-width: 1070px) {
+  .tolkien img:last-child {
+    display: none;
+  }
+
+  .last-image {
+    display: none;
+  }
+
+  .tolkien-container {
+    display: block;
+  }
+
+  .tolkien h1,
+  h2 {
+    padding: 20px 0 20px 0;
+  }
+
+  .tolkien {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tolkien-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tolkien h1,
+  h2 {
+    padding: 20px 0 20px 0;
+  }
+
+  .tolkien-card p,
+  li {
+    font-size: 14px;
+  }
+
+  .tolkien-card img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .tolkien img:last-child {
+    display: none;
+  }
+
+  .tolkien-card {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .tolkien-card ul li {
+    list-style: none;
+    padding-bottom: 2px;
+  }
+}

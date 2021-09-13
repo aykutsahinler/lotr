@@ -1,0 +1,64 @@
+.about-main ::selection {
+    color: black !important;
+} 
+
+.about-container h1, h2, h3 {
+    color: black;
+    padding-bottom: 20px;
+}
+
+.about-container h2 {
+    padding-top: 20px; 
+}
+
+.about-container h3 {
+    padding-top: 20px;
+}
+
+.about-container a {
+    color: white;
+    text-decoration: underline wavy white
+}
+
+.about-container li {
+    list-style: none
+}
+
+.about-container p {
+    line-height: 25px;
+}
+
+.about-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container {
+    position: relative;
+    padding: 80px;
+    text-align: center;
+    background-color: tomato;
+    color: white;
+    width: 70%;
+    top: 100px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px -10px black;
+    transition: .2s;
+}
+
+.about-container:hover {
+    transform: scale(1.04)
+}
+
+@media screen and (max-width: 1000px) {
+    .about-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-container p,li {
+        font-size: 14px;
+    }
+}
