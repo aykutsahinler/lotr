@@ -57,7 +57,7 @@ function Tolkien() {
           <img src={b} alt="" />
         </div>
       </div>
-      <h1>Eserleri</h1>
+      <h1>Works</h1>
       <div className="tolkien-container">
         <div className="tolkien-card">
           <ul>
